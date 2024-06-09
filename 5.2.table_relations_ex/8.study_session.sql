@@ -49,5 +49,4 @@ VALUES (1, 101),
        (2, 102),
        (2, 103);
 
-SELECT * FROM study_halls
 
