@@ -1,0 +1,10 @@
+SELECT
+    a.id || ' ' || a.username AS id_username,
+    email
+FROM accounts AS a JOIN
+    accounts_photos AS ac
+    ON a.id = ac.account_id JOIN
+        photos AS p
+            ON ac.photo_id = p.id
+WHERE a.id = p.id
+ORDER BY a.id;
